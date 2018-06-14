@@ -50,11 +50,17 @@ public class UserController {
         }
         return userService.sign(user);
     }
+    //修改个人资料
     @RequestMapping("/updateUser")
     JsonResult updateUser(@Valid @RequestBody User user,BindingResult result){
         if (result.hasErrors()){
             return ValidResult.checkResult(result);
         }
         return userService.updateUser(user);
+    }
+    //查看用户个人信息
+    @RequestMapping("/selectUser")
+    JsonResult selectUser(String account){
+        return userService.selectUser(account);
     }
 }

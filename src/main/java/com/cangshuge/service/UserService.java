@@ -21,7 +21,7 @@ public class UserService {
             if (!user.getPwd().equals(pwd)){
                 return new JsonResult("用户密码输入错误！",false);
             }else {
-                return new JsonResult("登录成功！",true,user);
+                return new JsonResult("登录成功！",true);
             }
         }
     }
@@ -45,5 +45,12 @@ public class UserService {
     public JsonResult updateUser(User user){
         userDao.updateUser(user);
         return new JsonResult("更新成功！",true);
+    }
+    public JsonResult selectUser(String account){
+        User user = userDao.selectUser(account);
+        if (user == null){
+            return new JsonResult("获取个人信息失败！",false);
+        }
+        return new JsonResult("获取个人信息成功！",true,user);
     }
 }

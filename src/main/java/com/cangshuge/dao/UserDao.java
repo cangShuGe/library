@@ -32,4 +32,12 @@ public interface UserDao {
             "address=#{user.address},credit=#{user.credit},name=#{user.name}," +
             "sex=#{user.sex},birthday=#{user.birthday} where account=#{user.account}")
     void updateUser(@Param("user") User user);
+
+    /**
+     * 查看个人资料
+     * @param account
+     * @return
+     */
+    @Select("select * from user where account = #{account,jdbcType=VARCHAR}")
+    User selectUser(@Param("account")String account);
 }
