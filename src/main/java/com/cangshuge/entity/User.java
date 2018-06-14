@@ -20,11 +20,11 @@ public class User {
     private String pwd;
 
     @NotNull(message = "用户邮箱不能为空")
-   // @Pattern(regexp = "^\w+((-\\\\w+)|(\\\\.\\\\w+))*\\\\@[A-Za-z0-9]+((\\\\.|-)[A-Za-z0-9]+)*\\\\.[A-Za-z0-9]+$")
+    @Pattern(regexp = "^\\w+((-\\w+)|(\\.\\w+))*\\@[A-Za-z0-9]+((\\.|-)[A-Za-z0-9]+)*\\.[A-Za-z0-9]+$")
     private String mailbox;
 
     @NotNull(message = "用户是否为会员不能为空")
-    private String member;
+    private int member;
 
     @NotNull(message = "用户收货地址不能为空")
     private String address;

@@ -5,6 +5,7 @@ import com.cangshuge.entity.JsonResult;
 import com.cangshuge.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class UserService {
@@ -23,5 +24,26 @@ public class UserService {
                 return new JsonResult("登录成功！",true,user);
             }
         }
+    }
+
+    @Transactional
+    public JsonResult sign(User user){
+        User user1 = userDao.login(user.getAccount());
+        if (user1 != null){
+            return new JsonResult("用户名已存在，请重新编辑用户名称进行注册！",false);
+        }else {
+            userDao.sign(user);
+            User user2 = userDao.login(user.getAccount());
+            if (user2 == null){
+                return new JsonResult("用户注册失败！",false);
+            }else {
+                return new JsonResult("用户注册成功！",true);
+            }
+        }
+    }
+
+    public JsonResult updateUser(User user){
+        userDao.updateUser(user);
+        return new JsonResult("更新成功！",true);
     }
 }
