@@ -18,5 +18,5 @@ public interface RecordDao {
     void updateJudge(@Param("account") String account,
                      @Param("bookno") int bookno,
                      @Param("buyTime") long buyTime,
-                     @Param("jugde") String judge);
+                     @Param("judge") String judge);
 }
