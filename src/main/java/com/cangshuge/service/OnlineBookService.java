@@ -36,4 +36,31 @@ public class OnlineBookService {
         Long total=new Long(pageInfo.getPages());
         return new JsonResult(total,"获取当前页电子书成功！",true,onlineBooks);
     }
+
+    public JsonResult showByNameOrAuth(String name,int pageNum,int pageSize){
+        PageHelper.startPage(pageNum,pageSize);
+        List<OnlineBook> onlineBooks = onlineBookDao.showByNameOrAuth(name);
+       // System.out.println(onlineBooks.size());
+        if (onlineBooks == null){
+            return new JsonResult("网络连接失败！",false);
+       }else if (onlineBooks.size() == 0){
+            return new JsonResult("没有相应的电子书",false);
+        }
+        PageInfo<OnlineBook> onlineBookPageInfo = new PageInfo<>(onlineBooks);
+        Long total=new Long(onlineBookPageInfo.getPages());
+        return new JsonResult(total,"获取电子书籍成功！",true,onlineBooks);
+    }
+
+    public JsonResult showByCata(int catalogno,int pageNum,int pageSize){
+        PageHelper.startPage(pageNum,pageSize);
+        List<OnlineBook> onlineBooks = onlineBookDao.showByCata(catalogno);
+        if (onlineBooks == null){
+            return new JsonResult("网络连接失败！",false);
+        }else if (onlineBooks.size() == 0){
+            return new JsonResult("还没有该类电子书",false);
+        }
+        PageInfo<OnlineBook> onlineBookPageInfo = new PageInfo<>(onlineBooks);
+        Long total=new Long(onlineBookPageInfo.getPages());
+        return new JsonResult(total,"获取该类电子书成功！",true,onlineBooks);
+    }
 }
