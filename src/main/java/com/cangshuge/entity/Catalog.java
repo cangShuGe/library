@@ -11,7 +11,7 @@ import javax.validation.constraints.NotEmpty;
 @Setter
 public class Catalog {
     @NotEmpty(message = "类别编号不能为空")
-    private int catalog;
+    private int catalogno;
 
     @NotEmpty(message = "类别名称不能为空")
     private String catalogname;
