@@ -16,6 +16,7 @@ public class UserService {
     public JsonResult login(String account,String pwd){
         User user = userDao.login(account);
         if (user == null){
+            System.out.println("我在后端欢迎你");
             return new JsonResult("用户名称输入错误",false);
         }else {
             if (!user.getPwd().equals(pwd)){

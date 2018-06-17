@@ -6,10 +6,7 @@ import com.cangshuge.service.UserService;
 import com.cangshuge.utils.ValidResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -28,12 +25,21 @@ public class UserController {
 
     /**
      * 实现用户登录功能
-     * @param account
-     * @param pwd
+     * @param
      * @return
      */
+    //@RequestMapping(value = "/userLogin",method = RequestMethod.POST)
+    /*JsonResult login(@RequestBody User user){//法1
+        System.out.println(user.getAccount());
+        System.out.println(user.getPwd());
+        System.out.println("------------------------------------------");
+        return userService.login(user.getAccount(),user.getPwd());
+    }*/
     @RequestMapping("/userLogin")
-    JsonResult login(String account,String pwd){
+    JsonResult login(String account,String pwd){//法1
+        System.out.println(account);
+        System.out.println(pwd);
+        System.out.println("------------------------------------------");
         return userService.login(account,pwd);
     }
 
