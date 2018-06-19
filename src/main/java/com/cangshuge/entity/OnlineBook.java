@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.validation.constraints.NotEmpty;
+import java.util.Date;
 
 @Data
 @Getter
@@ -23,7 +24,7 @@ public class OnlineBook {
     private String author;
 
     @NotEmpty(message = "发行时间不能为空")
-    private long publishTime;
+    private Date publishTime;
 
     @NotEmpty(message = "出版社不能为空")
     private String press;

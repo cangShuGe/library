@@ -17,4 +17,19 @@ public class BookController {
     JsonResult getAllBooks(int pageNum,int pageSize){
         return bookService.getAllbooks(pageNum,pageSize);
     }
+
+    @RequestMapping("/getBooksByCata")
+    JsonResult getBooksByCatalog(int catalogno,int pageNum,int pageSize){
+        return bookService.getBooksByCatalog(catalogno,pageNum,pageSize);
+    }
+
+    @RequestMapping("/getBookByName")
+    JsonResult getBooksByName(String name,int pageNum,int pageSize){
+        return bookService.getBooksByName(name,pageNum,pageSize);
+    }
+
+    @RequestMapping("/getBookByNo")
+    JsonResult getBookByNo(int bookno){
+        return bookService.getBookByNo(bookno);
+    }
 }

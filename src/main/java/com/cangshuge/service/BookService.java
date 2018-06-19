@@ -28,4 +28,43 @@ public class BookService {
             return new JsonResult(total,"获取所有实体书成功！",true,books);
         }
     }
+
+    public JsonResult getBooksByCatalog(int catalogno,int pageNum,int pageSize){
+        PageHelper.startPage(pageNum,pageSize);
+        List<Book> books = bookDao.getBooksByCatalog(catalogno);
+
+        if (books == null){
+            return new JsonResult("网络连接失败！",false);
+        }else if (books.size() == 0){
+            return new JsonResult("没有该类书的信息！",false);
+        }else{
+            PageInfo<Book> bookPageInfo = new PageInfo<>(books);
+            Long total=new Long(bookPageInfo.getPages());
+            return new JsonResult(total,"获取该类书籍信息成功",true,books);
+        }
+    }
+
+    public JsonResult getBooksByName(String name,int pageNum,int pageSize){
+        PageHelper.startPage(pageNum,pageSize);
+        List<Book> books = bookDao.getBooksByName(name);
+
+        if (books == null){
+            return new JsonResult("网络连接失败！",false);
+        }else if (books.size() == 0){
+            return new JsonResult("没有找到所查找到的书籍！",false);
+        }else{
+            PageInfo<Book> bookPageInfo = new PageInfo<>(books);
+            Long total=new Long(bookPageInfo.getPages());
+            return new JsonResult(total,"获取所需书籍信息成功！",true,books);
+        }
+    }
+
+    public JsonResult getBookByNo(int bookno){
+        Book book = bookDao.getBookByNo(bookno);
+        if (book == null){
+            return new JsonResult("没有本书的信息！",false);
+        }else {
+            return new JsonResult("获取书籍信息成功！",true,book);
+        }
+    }
 }

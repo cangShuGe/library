@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.validation.constraints.NotNull;
+import java.util.Date;
 
 @Data
 @Getter
@@ -23,13 +24,16 @@ public class Book {
     private String author;
 
     @NotNull(message = "出版时间不能为空")
-    private Long publishTime;
+    private Date publishTime;
 
     @NotNull(message = "出版社不能为空")
     private String press;//出版社
 
     @NotNull(message = "价格不能为空")
     private int price;
+
+    @NotNull(message = "库存不能为空")
+    private int total;
 
     private String resume;
     private String url;

@@ -47,4 +47,9 @@ public class OnlineController {
     JsonResult showByCata(int catalogno,int pageNum,int pageSize){
         return onlineBookService.showByCata(catalogno,pageNum,pageSize);
     }
+
+    @RequestMapping("/getonbyno")
+    JsonResult getOnByNo(int bookno){
+        return onlineBookService.getOnByNo(bookno);
+    }
 }

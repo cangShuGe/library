@@ -63,4 +63,13 @@ public class OnlineBookService {
         Long total=new Long(onlineBookPageInfo.getPages());
         return new JsonResult(total,"获取该类电子书成功！",true,onlineBooks);
     }
+
+    public JsonResult getOnByNo(int bookno){
+        OnlineBook onlineBook = onlineBookDao.getOnByNo(bookno);
+        if (onlineBook == null){
+            return new JsonResult("没有该电子书的相关信息",false);
+        }else {
+            return new JsonResult("获取该书信息成功！",true,onlineBook);
+        }
+    }
 }
