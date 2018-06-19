@@ -10,7 +10,7 @@ public interface UserDao {
      * @param account
      * @return 用户个人信息
      */
-    @Select("select * from user where account=#{account,jdbcType=VARCHAR}")
+    @Select("select * from user where binary account=#{account}")
     User login(String account);
 
     /**
