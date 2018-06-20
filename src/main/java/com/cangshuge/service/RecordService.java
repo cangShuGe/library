@@ -33,4 +33,26 @@ public class RecordService {
             return new JsonResult("获取买书记录成功！",true,records);
         }
     }
+
+    public JsonResult  delRecords(String account,int bookno,long buyTime){
+        recordDao.delRecords(account,bookno,buyTime);
+        Record record = recordDao.isExist(account,bookno,buyTime);
+        if (record != null){
+            return new JsonResult("删除购买记录失败！",false);
+        }else {
+            return new JsonResult("删除购买记录成功！",true);
+        }
+    }
+
+    public JsonResult updateScore(String account,int bookno,long buyTime,int score){
+        recordDao.updateScore(account,bookno,buyTime,score);
+        Record record = recordDao.isExist(account,bookno,buyTime);
+        if (record == null){
+            return new JsonResult("网络连接失败！",false);
+        }else if (record.getScore() != score){
+            return new JsonResult("评分失败！",false);
+        }else{
+            return new JsonResult("评分成功！",true);
+        }
+    }
 }

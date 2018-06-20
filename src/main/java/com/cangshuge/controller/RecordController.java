@@ -36,4 +36,14 @@ public class RecordController {
     JsonResult getRecordsByAcc(String account){
         return recordService.getRecordsByAcc(account);
     }
+
+    @RequestMapping("/delRecords")
+    JsonResult delRecords(String account,int bookno,long buyTime){
+        return recordService.delRecords(account,bookno,buyTime);
+    }
+
+    @RequestMapping("/updatescore")
+    JsonResult updateScore(String account,int bookno,long buyTime,int score){
+        return recordService.updateScore(account,bookno,buyTime,score);
+    }
 }

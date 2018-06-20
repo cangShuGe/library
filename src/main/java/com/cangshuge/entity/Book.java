@@ -24,13 +24,13 @@ public class Book {
     private String author;
 
     @NotNull(message = "出版时间不能为空")
-    private Date publishTime;
+    private long publishTime;
 
     @NotNull(message = "出版社不能为空")
     private String press;//出版社
 
     @NotNull(message = "价格不能为空")
-    private int price;
+    private double price;
 
     @NotNull(message = "库存不能为空")
     private int total;

@@ -21,4 +21,21 @@ public interface RecordDao {
 
     @Select("select * from record where binary account = #{account}")
     List<Record> getRecordsByAcc(@Param("account") String account);
+
+    @Select("select * from record where binary account = #{account} and bookno=#{bookno} and buyTime=#{buyTime}")
+    Record isExist(@Param("account") String account,
+                   @Param("bookno") int bookno,
+                   @Param("buyTime") long buyTime);
+    @Delete("delete from record where binary account=#{account} and " +
+            "bookno=#{bookno} and buyTime=#{buyTime}")
+    void delRecords(@Param("account") String account,
+                    @Param("bookno") int bookno,
+                    @Param("buyTime") long buyTime);
+
+    @Update("update record set score = #{score} where binary account=#{account} and " +
+            "bookno=#{bookno} and buyTime=#{buyTime}")
+    void updateScore(@Param("account") String account,
+                     @Param("bookno") int bookno,
+                     @Param("buyTime") long buyTime,
+                     @Param("score") int score);
 }

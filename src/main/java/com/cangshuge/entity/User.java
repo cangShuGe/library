@@ -12,7 +12,7 @@ import javax.validation.constraints.Pattern;
 @Setter
 public class User {
     @NotNull(message = "用户名不能为空")
-    @Pattern(regexp = "^[A-Za-z_]{5,15}$")
+    @Pattern(regexp = "^[A-Za-z_]{4,15}$")
     private String account;//用户名由5-15位字母下划线构成
 
     @NotNull(message = "用户密码不能为空")

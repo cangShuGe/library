@@ -18,4 +18,14 @@ public interface BookshelfDao {
     @Insert("insert into bookshelf(account,bookno) values(#{bookshelf.account}," +
             "#{bookshelf.bookno})")
     void addshelfbook(@Param("bookshelf") Bookshelf bookshelf); //添加电子书籍
+
+    @Update("update bookshelf set score = #{score} where binary account=#{account} and bookno=#{bookno}")
+    void updateonscore(@Param("account") String account,
+                       @Param("bookno") int bookno,
+                       @Param("score") int score);
+
+    @Update("update bookshelf set judge = #{judge} where binary account=#{account} and bookno=#{bookno}")
+    void updateonjudge(@Param("account") String account,
+                       @Param("bookno") int bookno,
+                       @Param("judge") String judge);
 }

@@ -22,4 +22,14 @@ public class BookshelfController {
     JsonResult delshelfbook(String account,int bookno){
         return bookshelfService.delshelfbook(account,bookno);
     }
+
+    @RequestMapping("/updonscore")
+    JsonResult updateonscore(String account,int bookno,int score){
+        return bookshelfService.updateonscore(account,bookno,score);
+    }
+
+    @RequestMapping("/updonjudge")
+    JsonResult updateonjudge(String account,int bookno,String judge){
+        return bookshelfService.updateonjudge(account,bookno,judge);
+    }
 }
