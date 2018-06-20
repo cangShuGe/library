@@ -30,7 +30,7 @@ public interface UserDao {
     @Update("update user set account=#{user.account},pwd=#{user.pwd}," +
             "mailbox=#{user.mailbox},member=#{user.member}," +
             "address=#{user.address},credit=#{user.credit},name=#{user.name}," +
-            "sex=#{user.sex},birthday=#{user.birthday} where account=#{user.account}")
+            "sex=#{user.sex},birthday=#{user.birthday} where binary account=#{user.account}")
     void updateUser(@Param("user") User user);
 
     /**
@@ -38,6 +38,13 @@ public interface UserDao {
      * @param account
      * @return
      */
-    @Select("select * from user where account = #{account,jdbcType=VARCHAR}")
+    @Select("select * from user where binary account = #{account}")
     User selectUser(@Param("account")String account);
+
+    /**
+     * 注册成为会员
+     * @param account
+     */
+    @Update("update user set member=1 where binary account = #{account}")
+    void huiyuan(@Param("account") String account);// 1表示会员
 }

@@ -31,4 +31,9 @@ public class RecordController {
     JsonResult updateJudge(String account,int bookno,long buyTime,String judge){
         return recordService.updateJudge(account,bookno,buyTime,judge);
     }
+
+    @RequestMapping("/getRecordsByAcc")
+    JsonResult getRecordsByAcc(String account){
+        return recordService.getRecordsByAcc(account);
+    }
 }

@@ -54,4 +54,15 @@ public class UserService {
         }
         return new JsonResult("获取个人信息成功！",true,user);
     }
+
+    public JsonResult huiyuan(String account){
+        userDao.huiyuan(account);
+        User user = userDao.selectUser(account);
+        if (user == null){
+            return new JsonResult("网络连接出错？您还不是普通成员，无法注册会员？",false);
+        }else if (user.getMember() != 1){
+            return new JsonResult("注册失败！",false);
+        }
+        return new JsonResult("注册成功！",true);
+    }
 }

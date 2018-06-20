@@ -69,4 +69,9 @@ public class UserController {
     JsonResult selectUser(String account){
         return userService.selectUser(account);
     }
+
+    @RequestMapping("/huiyuan")
+    JsonResult huiyuan(String account){
+        return userService.huiyuan(account);
+    }
 }

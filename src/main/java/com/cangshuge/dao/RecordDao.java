@@ -1,10 +1,9 @@
 package com.cangshuge.dao;
 
 import com.cangshuge.entity.Record;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Update;
+import org.apache.ibatis.annotations.*;
+
+import java.util.List;
 
 @Mapper
 public interface RecordDao {
@@ -19,4 +18,7 @@ public interface RecordDao {
                      @Param("bookno") int bookno,
                      @Param("buyTime") long buyTime,
                      @Param("judge") String judge);
+
+    @Select("select * from record where binary account = #{account}")
+    List<Record> getRecordsByAcc(@Param("account") String account);
 }
