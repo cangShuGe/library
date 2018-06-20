@@ -7,6 +7,8 @@ import com.cangshuge.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class AdminService {
     @Autowired
@@ -88,6 +90,22 @@ public class AdminService {
             return new JsonResult("删除电子书籍信息失败！",false);
         }else{
             return new JsonResult("删除电子书籍信息成功！",true);
+        }
+    }
+
+    public JsonResult addDiscord(Discord discord){
+        adminDao.addDiscord(discord);
+        return new JsonResult("恭喜你，添加书籍活动信息成功！",true);
+    }
+
+    public JsonResult showDiscords(){
+        List<Discord> discord = adminDao.showDiscords();
+        if (discord == null){
+            return new JsonResult("网络连接失败！",false);
+        }else if (discord.size() == 0){
+            return new JsonResult("当前没有活动界面！",false);
+        }else{
+            return new JsonResult("获取活动信息成功！",true,discord);
         }
     }
 }

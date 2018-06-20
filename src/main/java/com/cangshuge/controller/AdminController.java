@@ -1,9 +1,6 @@
 package com.cangshuge.controller;
 
-import com.cangshuge.entity.Book;
-import com.cangshuge.entity.Catalog;
-import com.cangshuge.entity.JsonResult;
-import com.cangshuge.entity.OnlineBook;
+import com.cangshuge.entity.*;
 import com.cangshuge.service.AdminService;
 import com.cangshuge.utils.ValidResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -76,5 +73,19 @@ public class AdminController {
     @RequestMapping("/admindelonbooks")
     JsonResult delonbooks(int bookno){
         return adminService.delonbooks(bookno);
+    }
+
+    @RequestMapping("/admindiscord")
+    JsonResult addDiscord(@Valid @RequestBody Discord discord,BindingResult result){
+        if (result.hasErrors()){
+            return ValidResult.checkResult(result);
+        }else{
+            return adminService.addDiscord(discord);
+        }
+    }
+
+    @RequestMapping("/showAllDiscords")
+    JsonResult showDiscords(){
+        return adminService.showDiscords();
     }
 }

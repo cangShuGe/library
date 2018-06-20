@@ -1,10 +1,9 @@
 package com.cangshuge.dao;
 
-import com.cangshuge.entity.Book;
-import com.cangshuge.entity.Catalog;
-import com.cangshuge.entity.OnlineBook;
-import com.cangshuge.entity.User;
+import com.cangshuge.entity.*;
 import org.apache.ibatis.annotations.*;
+
+import java.util.List;
 
 @Mapper
 public interface AdminDao {
@@ -45,4 +44,11 @@ public interface AdminDao {
 
     @Delete("delete from onlinebook where bookno=#{bookno}")
     void delonbooks(int bookno);
+
+    @Insert("insert into discord(bookno,isOnline,discord) values(#{discords.bookno}," +
+            "#{discords.isOnline},#{discords.discord})")
+    void addDiscord(@Param("discords") Discord discord);
+
+    @Select("select * from discord")
+    List<Discord> showDiscords();
 }
