@@ -2,6 +2,7 @@ package com.cangshuge.service;
 
 import com.cangshuge.dao.CartDao;
 import com.cangshuge.entity.Cart;
+import com.cangshuge.entity.GetCart;
 import com.cangshuge.entity.JsonResult;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -27,16 +28,16 @@ public class CartService {
             return new JsonResult("恭喜你，添加购物车成功！",true);
     }
 
-    public JsonResult getAllFromCart(int pageNum,int pageSize){
+    public JsonResult getAllFromCart(String account,int pageNum,int pageSize){
         PageHelper.startPage(pageNum,pageSize);
-        List<Cart> carts = cartDao.getAllFromCart();
+        List<GetCart> carts = cartDao.getAllFromCart(account);
 
         if (carts == null){
             return new JsonResult("网络连接失败！",false);
         }else if (carts.size() == 0){
             return new JsonResult("购物车空空如也~~~",false);
         }else{
-            PageInfo<Cart> cartPageInfo = new PageInfo<>(carts);
+            PageInfo<GetCart> cartPageInfo = new PageInfo<>(carts);
             Long total = new Long(cartPageInfo.getPages());
             return new JsonResult(total,"获取购物车内容成功!",true,carts);
         }

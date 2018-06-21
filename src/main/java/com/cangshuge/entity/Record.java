@@ -24,4 +24,14 @@ public class Record {
 
     private int score;//评分
     private String judge;
+
+    public Record(){}
+
+    public Record(String account,int bookno, long buyTime,
+                  int num){
+        this.account=account;
+        this.bookno=bookno;
+        this.buyTime=buyTime;
+        this.num=num;
+    }
 }

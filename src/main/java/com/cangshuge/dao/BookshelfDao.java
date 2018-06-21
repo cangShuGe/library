@@ -1,14 +1,23 @@
 package com.cangshuge.dao;
 
 import com.cangshuge.entity.Bookshelf;
+import com.cangshuge.entity.OnlineBook;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
 @Mapper
 public interface BookshelfDao {
-    @Select("select * from bookshelf where binary account = #{account}")
-    List<Bookshelf> getshelfbyacc(@Param("account") String account); //查看我的电子书
+    @Results({
+            @Result(property = "bookname",column = "bookname"),
+            @Result(property = "author",column = "author"),
+            @Result(property = "price",column ="price"),
+            @Result(property = "resume",column = "resume"),
+            @Result(property = "url",column = "url")
+    })
+    @Select("select bookname,author,price,resume,url from bookshelf,onlinebook " +
+            "where binary account = #{account} and bookshelf.bookno=onlinebook.bookno")
+    List<OnlineBook> getshelfbyacc(@Param("account") String account); //查看我的电子书
 
     @Select("select * from bookshelf where binary account=#{account} and bookno=#{bookno}")
     Bookshelf isExist(@Param("account") String account,@Param("bookno") int bookno);

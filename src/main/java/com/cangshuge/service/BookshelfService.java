@@ -3,6 +3,7 @@ package com.cangshuge.service;
 import com.cangshuge.dao.BookshelfDao;
 import com.cangshuge.entity.Bookshelf;
 import com.cangshuge.entity.JsonResult;
+import com.cangshuge.entity.OnlineBook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +15,7 @@ public class BookshelfService {
     BookshelfDao bookshelfDao ;
 
     public JsonResult getshelfbyacc(String account){
-        List<Bookshelf> bookshelves = bookshelfDao.getshelfbyacc(account);
+        List<OnlineBook> bookshelves = bookshelfDao.getshelfbyacc(account);
 
         if (bookshelves == null){
             return new JsonResult("网络连接失败！",false);

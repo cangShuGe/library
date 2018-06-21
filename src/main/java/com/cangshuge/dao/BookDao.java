@@ -4,6 +4,7 @@ import com.cangshuge.entity.Book;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
@@ -20,4 +21,10 @@ public interface BookDao {
 
     @Select("select * from book where bookno = #{bookno}")
     Book getBookByNo(int bookno);//根据一本书得到这本书的详细信息
+
+    @Select("select * from book where catalogno = #{catalogno}")
+    List<Book> recommendBooks(@Param("catalogno") int catalogno);
+
+    @Update("update book set total = total-#{num} where bookno=#{bookno}")
+    void updateTotal(@Param("bookno") int bookno,@Param("num") int num);
 }

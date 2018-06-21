@@ -2,11 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb2ffc89-ae47-4acd-b20b-afb908d826f4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Discord.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/BookAndRecord.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/GetCart.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Recommend.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/AdminController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/BookshelfController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/BookshelfController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/CartController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/CartController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/RecordController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/RecordController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/UserController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/AdminDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/AdminDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/BookDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/BookDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/BookshelfDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/BookshelfDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/CartDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/CartDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/RecordDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/RecordDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/UserDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/UserDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Record.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Record.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/service/AdminService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/service/AdminService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/service/BookService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/service/BookService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/service/BookshelfService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/service/BookshelfService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/service/CartService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/service/CartService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/service/RecordService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/service/RecordService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cangshuge/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cangshuge/service/UserService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,18 +71,42 @@
         <item name="library@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="library: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="discord: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="book: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="library@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="library: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="cart: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="library@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="library: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Discord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Discord.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="BookDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/BookDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="344">
+              <caret line="27" column="60" lean-forward="true" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,34 +114,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/AdminDao.java">
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="491">
+              <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/AdminService.java">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="100" column="36" lean-forward="true" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/AdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="42">
+              <caret line="82" column="20" lean-forward="false" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
               <folding>
-                <element signature="e#2758#2759#0" expanded="true" />
-                <element signature="e#2808#2809#0" expanded="true" />
+                <element signature="e#2258#2259#0" expanded="true" />
+                <element signature="e#2322#2323#0" expanded="true" />
+                <element signature="e#2415#2416#0" expanded="true" />
+                <element signature="e#2469#2470#0" expanded="true" />
+                <element signature="e#2607#2608#0" expanded="true" />
+                <element signature="e#2658#2659#0" expanded="true" />
+                <element signature="e#2731#2732#0" expanded="true" />
+                <element signature="e#2782#2783#0" expanded="true" />
+                <element signature="e#2859#2860#0" expanded="true" />
+                <element signature="e#2912#2913#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,7 +183,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/utils/JsonUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/JsonResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/utils/ValidResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Record.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/service/CatalogService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/CatalogController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -154,35 +192,40 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/service/TestService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/BookDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/BookController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/service/BookService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/OnlineBookDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/service/OnlineBookService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/OnlineController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Cart.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/CatalogDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Bookshelf.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/CartDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/service/CartService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/CartController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/RecordDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/RecordController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/service/RecordService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/BookshelfDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/service/BookshelfService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/BookshelfController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Catalog.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/OnlineBook.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Discord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/service/BookService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Recommend.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/AdminDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/service/AdminService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/BookController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/RecordController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/service/RecordService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/RecordDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/BookAndRecord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/OnlineBookAndShelf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/BookshelfDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/service/BookshelfService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/BookshelfController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/controller/CartController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/service/CartService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Record.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/BookDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/entity/GetCart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/CartDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cangshuge/service/UserService.java" />
       </list>
     </option>
   </component>
@@ -252,6 +295,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,8 +370,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -497,7 +540,9 @@
       <workItem from="1529414318413" duration="1323000" />
       <workItem from="1529421215168" duration="8633000" />
       <workItem from="1529454760904" duration="20975000" />
-      <workItem from="1529508886439" duration="2684000" />
+      <workItem from="1529508886439" duration="5005000" />
+      <workItem from="1529541143893" duration="20690000" />
+      <workItem from="1529578346047" duration="4341000" />
     </task>
     <task id="LOCAL-00001" summary="mysql connect!!">
       <created>1528854955360</created>
@@ -597,11 +642,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529510143488</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="周三">
+      <created>1529511930376</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1529511930376</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127450000" />
+    <option name="totallyTimeSpent" value="154802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -614,20 +666,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19688842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20225322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2081545" sideWeight="0.86070216" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -657,49 +709,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/CatalogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/TestDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/utils/JsonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/entity/JsonResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/CatalogController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -731,34 +740,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/BookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://src:table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.bookshelf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="2" lean-forward="false" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="58" column="31" lean-forward="false" selection-start-line="58" selection-start-column="31" selection-end-line="58" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -768,97 +753,6 @@
           <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="48" column="20" lean-forward="true" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding>
-            <element signature="e#2317#2318#0" expanded="false" />
-            <element signature="e#2368#2369#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/CartDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/CartService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.cart">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="35" column="42" lean-forward="false" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1045#1046#0" expanded="false" />
-            <element signature="e#1112#1113#0" expanded="false" />
-            <element signature="e#1209#1210#0" expanded="false" />
-            <element signature="e#1275#1276#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.record">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/RecordController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#1131#1132#0" expanded="false" />
-            <element signature="e#1192#1193#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/RecordService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="52" column="49" lean-forward="false" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/BookshelfService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/BookshelfController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
-          <folding>
-            <element signature="e#729#730#0" expanded="false" />
-            <element signature="e#797#798#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -874,15 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/RecordDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,22 +776,8 @@
         <state relative-caret-position="294">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.catalog">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/BookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -918,56 +789,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/BookDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/BookshelfDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="48" column="59" lean-forward="false" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/OnlineBookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="66" column="27" lean-forward="false" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/OnlineBookDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -979,21 +804,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.bookshelf">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.book">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.onlinebook">
+    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.discord">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1005,41 +816,285 @@
         <state relative-caret-position="252">
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.discord">
+    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.catalog">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/AdminDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/AdminService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="100" column="36" lean-forward="true" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
+        <state relative-caret-position="176">
+          <caret line="111" column="35" lean-forward="false" selection-start-line="111" selection-start-column="35" selection-end-line="111" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/JDKPath/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="744" column="0" lean-forward="false" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.record">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.bookshelf">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Recommend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/OnlineBookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="66" column="27" lean-forward="false" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1148">
+          <caret line="82" column="48" lean-forward="false" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
           <folding>
-            <element signature="e#2758#2759#0" expanded="true" />
-            <element signature="e#2808#2809#0" expanded="true" />
+            <element signature="e#2758#2759#0" expanded="false" />
+            <element signature="e#2808#2809#0" expanded="false" />
+            <element signature="e#2879#2880#0" expanded="false" />
+            <element signature="e#2930#2931#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/entity/OnlineBookAndShelf.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/entity/BookAndRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/RecordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/RecordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding>
+            <element signature="e#1201#1202#0" expanded="false" />
+            <element signature="e#1262#1263#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/BookshelfDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.onlinebook">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/BookshelfService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.book">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/BookshelfController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/RecordDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/entity/Record.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/7dcd6502/f3a9fe5e-f79f-48ba-85c6-f4e2299c6512/library.cart">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/CartService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="41" column="63" lean-forward="false" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/entity/GetCart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/CartDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="28" column="60" lean-forward="false" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="35" column="63" lean-forward="true" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+          <folding>
+            <element signature="e#1298#1299#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/BookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="27" column="60" lean-forward="true" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="82" column="20" lean-forward="false" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
+          <folding>
+            <element signature="e#2258#2259#0" expanded="true" />
+            <element signature="e#2322#2323#0" expanded="true" />
+            <element signature="e#2415#2416#0" expanded="true" />
+            <element signature="e#2469#2470#0" expanded="true" />
+            <element signature="e#2607#2608#0" expanded="true" />
+            <element signature="e#2658#2659#0" expanded="true" />
+            <element signature="e#2731#2732#0" expanded="true" />
+            <element signature="e#2782#2783#0" expanded="true" />
+            <element signature="e#2859#2860#0" expanded="true" />
+            <element signature="e#2912#2913#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cangshuge/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="85" column="34" lean-forward="true" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

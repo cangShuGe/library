@@ -28,13 +28,14 @@ public class UserController {
      * @param
      * @return
      */
-    //@RequestMapping(value = "/userLogin",method = RequestMethod.POST)
-    /*JsonResult login(@RequestBody User user){//法1
+    /*@RequestMapping(value = "/userLogin",method = RequestMethod.POST)
+    JsonResult login(@RequestBody User user){//法1
         System.out.println(user.getAccount());
         System.out.println(user.getPwd());
         System.out.println("------------------------------------------");
         return userService.login(user.getAccount(),user.getPwd());
     }*/
+
     @RequestMapping("/userLogin")
     JsonResult login(String account,String pwd){//法1
         System.out.println(account);
@@ -54,6 +55,7 @@ public class UserController {
         if (result.hasErrors()){
             return ValidResult.checkResult(result);
         }
+        System.out.println(user.getAccount());
         return userService.sign(user);
     }
     //修改个人资料
@@ -64,14 +66,35 @@ public class UserController {
         }
         return userService.updateUser(user);
     }
+
+    //修改个人密码
+    @RequestMapping("/updatePwd")
+    JsonResult updatePwd(String account,String pwd,String newPwd){
+        return userService.updatePwd(account,pwd,newPwd);
+    }
     //查看用户个人信息
     @RequestMapping("/selectUser")
     JsonResult selectUser(String account){
         return userService.selectUser(account);
     }
 
+    /**
+     * 注册会员
+     * @param account
+     * @return
+     */
     @RequestMapping("/huiyuan")
     JsonResult huiyuan(String account){
         return userService.huiyuan(account);
+    }
+
+    @RequestMapping("/recommendBooks")
+    JsonResult recommendBooks(){
+        return userService.recommendBooks();
+    }
+
+    @RequestMapping("/recommendOnBooks")
+    JsonResult recommendOnBooks(){
+        return userService.recommendOnBooks();
     }
 }

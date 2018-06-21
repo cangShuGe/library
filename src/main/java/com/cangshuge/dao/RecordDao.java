@@ -1,5 +1,6 @@
 package com.cangshuge.dao;
 
+import com.cangshuge.entity.BookAndRecord;
 import com.cangshuge.entity.Record;
 import org.apache.ibatis.annotations.*;
 
@@ -19,8 +20,16 @@ public interface RecordDao {
                      @Param("buyTime") long buyTime,
                      @Param("judge") String judge);
 
-    @Select("select * from record where binary account = #{account}")
-    List<Record> getRecordsByAcc(@Param("account") String account);
+    @Results({
+            @Result(property = "bookname",column = "bookname"),
+            @Result(property = "author",column = "author"),
+            @Result(property = "price",column ="price"),
+            @Result(property = "buyTime",column = "buyTime"),
+            @Result(property = "score",column = "score"),
+            @Result(property = "num",column = "num")
+    })
+    @Select("select bookname,author,price,buyTime,score,num from record,book where binary account = #{account} and record.bookno = book.bookno")
+    List<BookAndRecord> getRecordsByAcc(@Param("account") String account);
 
     @Select("select * from record where binary account = #{account} and bookno=#{bookno} and buyTime=#{buyTime}")
     Record isExist(@Param("account") String account,

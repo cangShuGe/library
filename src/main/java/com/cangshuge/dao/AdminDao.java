@@ -12,6 +12,9 @@ public interface AdminDao {
     @Insert("insert into catalog(catalogno,catalogname) values(#{catalog.catalogno},#{catalog.catalogname})")
     void addcata(@Param("catalog") Catalog catalog);//添加用户分类信息
 
+    @Select("select * from catalog")
+    List<Catalog> adminShowCata();
+
     @Insert("insert into book(bookno,bookname,catalogno,author,publishTime,press,price,total,resume,url) " +
             "values(#{book.bookno},#{book.bookname},#{book.catalogno},#{book.author},#{book.publishTime}," +
             "#{book.press},#{book.price},#{book.total},#{book.resume},#{book.url})")
@@ -51,4 +54,8 @@ public interface AdminDao {
 
     @Select("select * from discord")
     List<Discord> showDiscords();
+
+    @Select("select * from discord where bookno=#{bookno} and isOnline=#{isOnline}")
+    Discord showOneDis(int bookno,int isOnline);
+
 }

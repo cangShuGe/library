@@ -28,8 +28,8 @@ public class CartController {
     }
 
     @RequestMapping("/getallfromcart")
-    JsonResult getAllFromCart(int pageNum,int pageSize){
-        return cartService.getAllFromCart(pageNum,pageSize);
+    JsonResult getAllFromCart(String account,int pageNum,int pageSize){
+        return cartService.getAllFromCart(account,pageNum,pageSize);
     }
 
     @RequestMapping("/delcart")

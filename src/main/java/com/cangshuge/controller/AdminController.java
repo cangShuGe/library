@@ -88,4 +88,9 @@ public class AdminController {
     JsonResult showDiscords(){
         return adminService.showDiscords();
     }
+
+    @RequestMapping("/adminShowCata")
+    JsonResult adminShowCata(){
+        return adminService.adminShowCata();
+    }
 }

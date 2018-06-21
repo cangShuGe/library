@@ -32,6 +32,11 @@ public class RecordController {
         return recordService.updateJudge(account,bookno,buyTime,judge);
     }
 
+    /**
+     * 获取全部的购买记录
+     * @param account
+     * @return
+     */
     @RequestMapping("/getRecordsByAcc")
     JsonResult getRecordsByAcc(String account){
         return recordService.getRecordsByAcc(account);

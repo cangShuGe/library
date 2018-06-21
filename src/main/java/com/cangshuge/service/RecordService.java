@@ -1,6 +1,7 @@
 package com.cangshuge.service;
 
 import com.cangshuge.dao.RecordDao;
+import com.cangshuge.entity.BookAndRecord;
 import com.cangshuge.entity.JsonResult;
 import com.cangshuge.entity.Record;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,7 @@ public class RecordService {
     }
 
     public JsonResult getRecordsByAcc(String account){
-        List<Record> records = recordDao.getRecordsByAcc(account);
+        List<BookAndRecord> records = recordDao.getRecordsByAcc(account);
         if (records == null){
             return new JsonResult("网络连接失败!",false);
         }else if(records.size() == 0){

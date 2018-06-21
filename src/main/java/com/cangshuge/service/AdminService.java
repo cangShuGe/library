@@ -108,4 +108,15 @@ public class AdminService {
             return new JsonResult("获取活动信息成功！",true,discord);
         }
     }
+
+    public JsonResult adminShowCata(){
+        List<Catalog> catalogs = adminDao.adminShowCata();
+        if (catalogs == null){
+            return new JsonResult("网络连接失败！",false);
+        }else if (catalogs.size() == 0){
+            return new JsonResult("当前还没有书籍分类信息！",false);
+        }else {
+            return new JsonResult("获取成功！",true,catalogs);
+        }
+    }
 }

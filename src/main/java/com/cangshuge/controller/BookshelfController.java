@@ -13,7 +13,7 @@ public class BookshelfController {
     @Autowired
     BookshelfService bookshelfService;
 
-    @RequestMapping("/getshelfbyacc")
+        @RequestMapping("/getshelfbyacc")
     JsonResult getshelfbyacc(String account){
         return bookshelfService.getshelfbyacc(account);
     }
