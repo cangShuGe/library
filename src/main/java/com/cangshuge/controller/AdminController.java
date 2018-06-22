@@ -153,4 +153,9 @@ public class AdminController {
     JsonResult adminShowCata(){
         return adminService.adminShowCata();
     }
+
+    @RequestMapping("/admindelcata")
+    JsonResult admindelCata(int catalogno){
+        return adminService.admindelCata(catalogno);
+    }
 }

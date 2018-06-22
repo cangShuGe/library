@@ -58,4 +58,7 @@ public interface AdminDao {
     @Select("select * from discord where bookno=#{bookno} and isOnline=#{isOnline}")
     Discord showOneDis(int bookno,int isOnline);
 
+    @Delete("delete from catalog where catalogno = #{catalogno}")
+    void admindelCata(@Param("catalogno") int catalogno);
+
 }

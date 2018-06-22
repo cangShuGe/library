@@ -119,4 +119,9 @@ public class AdminService {
             return new JsonResult("获取成功！",true,catalogs);
         }
     }
+
+    public JsonResult admindelCata(int catalogno){
+        adminDao.admindelCata(catalogno);
+        return new JsonResult("删除书籍种类成功！",true);
+    }
 }
