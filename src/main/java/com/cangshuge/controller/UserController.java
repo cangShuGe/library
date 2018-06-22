@@ -97,4 +97,33 @@ public class UserController {
     JsonResult recommendOnBooks(){
         return userService.recommendOnBooks();
     }
+
+    /**
+     * 直接购买实体书
+     * @param bookno
+     * @param num
+     * @param buyTime
+     * @param account
+     * @return
+     */
+    @RequestMapping("/buyBooks")
+    JsonResult buyBooks(int bookno,int num,long buyTime,String account){
+        //System.out.println(account);
+        //System.out.println("**********************");
+        return userService.buyBooks(bookno,num,buyTime,account);
+    }
+
+    /**
+     * 购物车中购买实体书
+     * @param account
+     * @param bookno
+     * @param num
+     * @param buyTime
+     * @param addtime
+     * @return
+     */
+    @RequestMapping("/buyBooksCart")
+    JsonResult buyBooksCart(String account,int bookno,int num,long buyTime,long addtime){
+        return userService.buyBooksCart(account,bookno,num,buyTime,addtime);
+    }
 }

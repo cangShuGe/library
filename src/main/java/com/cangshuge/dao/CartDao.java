@@ -24,9 +24,10 @@ public interface CartDao {
             @Result(property = "price",column = "price"),
             @Result(property = "resume",column = "resume"),
             @Result(property = "num",column = "num"),
-            @Result(property = "addtime",column = "addtime")
+            @Result(property = "addtime",column = "addtime"),
+            @Result(property = "bookno",column = "booknum")
     })
-    @Select("select bookname,author,price,resume,num,addtime from cart,book where binary account = #{account} and cart.bookno = book.bookno")
+    @Select("select bookname,author,price,resume,num,addtime,book.bookno as booknum from cart,book where binary account = #{account} and cart.bookno = book.bookno")
     List<GetCart> getAllFromCart(String account);
 
     @Delete("delete from cart where binary account=#{account} and bookno=#{bookno} and addtime=#{addtime}")

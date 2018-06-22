@@ -18,4 +18,10 @@ public class Bookshelf {
 
     int score;
     String judge;
+
+    public Bookshelf(){}
+    public Bookshelf(String account,int bookno){
+        this.account=account;
+        this.bookno=bookno;
+    }
 }

@@ -51,4 +51,9 @@ public class RecordController {
     JsonResult updateScore(String account,int bookno,long buyTime,int score){
         return recordService.updateScore(account,bookno,buyTime,score);
     }
+
+    @RequestMapping("/getAllJudge")
+    JsonResult getAllByBookno(int bookno){
+        return recordService.getAllByBookno(bookno);
+    }
 }

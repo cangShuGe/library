@@ -56,4 +56,15 @@ public class RecordService {
             return new JsonResult("评分成功！",true);
         }
     }
+
+    public JsonResult getAllByBookno(int bookno){
+        List<Record> records = recordDao.getAllByBookno(bookno);
+        if (records == null){
+            return new JsonResult("网络连接失败！",false);
+        }else if (records.size() == 0){
+            return new JsonResult("当前书籍没有购买记录！",false);
+        }else {
+            return new JsonResult("该书籍购买记录查询成功！",true,records);
+        }
+    }
 }

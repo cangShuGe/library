@@ -1,6 +1,7 @@
 package com.cangshuge.dao;
 
 import com.cangshuge.entity.OnlineBook;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -21,4 +22,8 @@ public interface OnlineBookDao {
     @Select("select * from onlinebook where bookno = #{bookno}")
     OnlineBook getOnByNo(int bookno);
 
+    @Insert("insert into onlinebook(bookno,bookname,catalogno,author,publishTime,press,price,resume,url)" +
+            " values(#{online.bookno},online.bookname},online.catalogno},online.author},online.publishTime}," +
+            "online.press},online.price},online.resume},online.url})")
+    void addOnlineBook(@Param("online") OnlineBook onlineBook);
 }

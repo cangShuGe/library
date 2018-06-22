@@ -10,4 +10,5 @@ public class GetCart {
     private String resume;
     private int num;
     private long addtime;
+    private int bookno;
 }

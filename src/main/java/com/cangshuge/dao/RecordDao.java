@@ -26,10 +26,19 @@ public interface RecordDao {
             @Result(property = "price",column ="price"),
             @Result(property = "buyTime",column = "buyTime"),
             @Result(property = "score",column = "score"),
-            @Result(property = "num",column = "num")
+            @Result(property = "num",column = "num"),
+            @Result(property = "bookno",column = "booknum")//需要用别名
     })
-    @Select("select bookname,author,price,buyTime,score,num from record,book where binary account = #{account} and record.bookno = book.bookno")
+    @Select("select bookname,author,price,buyTime,score,num,book.bookno as booknum from record,book where binary account = #{account} and record.bookno = book.bookno")
     List<BookAndRecord> getRecordsByAcc(@Param("account") String account);
+
+    /**
+     * 查询所有的购书记录--主要是查看评价
+     * @param bookno
+     * @return
+     */
+    @Select("select * from record where bookno=#{bookno}")
+    List<Record> getAllByBookno(@Param("bookno") int bookno);
 
     @Select("select * from record where binary account = #{account} and bookno=#{bookno} and buyTime=#{buyTime}")
     Record isExist(@Param("account") String account,

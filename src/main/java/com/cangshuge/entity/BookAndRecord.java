@@ -10,4 +10,5 @@ public class BookAndRecord {
     private long buyTime;
     private int score;
     private int num;
+    private int bookno;
 }
