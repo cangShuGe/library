@@ -69,16 +69,29 @@ public interface UserDao {
     void huiyuan(@Param("account") String account);// 1表示会员
 
     @Results({
-            @Result(property = "bookno",column = "bookno"),
-            @Result(property = "avgscore",column = "avg_scores")
+            @Result(property = "bookno",column = "booknum"),
+            @Result(property = "avgscore",column = "avg_scores"),
+            @Result(property = "bookname",column = "bookname"),
+            @Result(property = "author",column = "author"),
+            @Result(property = "price",column = "price"),
+            @Result(property = "resume",column = "resume"),
+            @Result(property = "url",column = "url")
     })
-    @Select("select bookno,AVG(score) as avg_scores from record group by bookno order by AVG(score) desc")
-    List<Recommend> recommendBooks(); //对书籍评分进行了排序
+    @Select("select book.bookno as booknum,AVG(score) as avg_scores,bookname,author,price,resume,url " +
+            "from record,book where record.bookno = book.bookno group by book.bookno order by AVG(score) desc")
+    List<Recommend> recommendBooks(); //对书籍评分进行了排序 推荐实体书籍
 
     @Results({
-            @Result(property = "bookno",column = "bookno"),
-            @Result(property = "avgscore",column = "avg_scores")
+            @Result(property = "bookno",column = "booknum"),
+            @Result(property = "avgscore",column = "avg_scores"),
+            @Result(property = "bookname",column = "bookname"),
+            @Result(property = "author",column = "author"),
+            @Result(property = "price",column = "price"),
+            @Result(property = "resume",column = "resume"),
+            @Result(property = "url",column = "url"),
+            @Result(property = "press",column = "press")
     })
-    @Select("select bookno,AVG(score) as avg_scores from bookshelf group by bookno order by AVG(score) desc")
+    @Select("select onlinebook.bookno as booknum,AVG(score) as avg_scores,bookname,author,price,resume,url,press from bookshelf,onlinebook" +
+            " where bookshelf.bookno = onlinebook.bookno group by onlinebook.bookno order by AVG(score) desc")
     List<Recommend> recommendOnBooks();//推荐电子书籍
 }
