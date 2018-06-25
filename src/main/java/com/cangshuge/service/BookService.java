@@ -54,7 +54,7 @@ public class BookService {
             return new JsonResult("没有找到所查找到的书籍！",false);
         }else{
             PageInfo<Book> bookPageInfo = new PageInfo<>(books);
-            Long total=new Long(bookPageInfo.getPages());
+            Long total=bookPageInfo.getTotal();
             return new JsonResult(total,"获取所需书籍信息成功！",true,books);
         }
     }

@@ -126,4 +126,15 @@ public class UserController {
     JsonResult buyBooksCart(String account,int bookno,int num,long buyTime,long addtime){
         return userService.buyBooksCart(account,bookno,num,buyTime,addtime);
     }
+
+    /**
+     * 下载电子书
+     * @param account
+     * @param bookno
+     * @return
+     */
+    @RequestMapping("/downloadBooks")
+    JsonResult addToBookshelf(String account,int bookno){
+        return userService.downloadBooks(account,bookno);
+    }
 }

@@ -50,7 +50,7 @@ public interface UserDao {
      * @param account
      * @param sum
      */
-    @Update("update user set credit = credit + sum where account=#{account}")
+    @Update("update user set credit = credit + #{sum} where account=#{account}")
     void updateCredit(@Param("account") String account,@Param("sum") int sum);
 
     /**
