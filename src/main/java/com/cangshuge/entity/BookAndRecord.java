@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class BookAndRecord {
+    private String judge;
     private String bookname;
     private String author;
     private double price;
