@@ -45,7 +45,7 @@ public class UserController {
     }
 
     /**
-     * 实现普通用户的注册
+     * 实现普通用户的注册user
      * @param user
      * @param result
      * @return result是捕获错误，ValidResult是显示错误

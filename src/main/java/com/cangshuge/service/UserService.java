@@ -44,8 +44,11 @@ public class UserService {
     @Transactional
     public JsonResult sign(User user){
         User user1 = userDao.login(user.getAccount());
+        User user3 = userDao.getByMailbox(user.getMailbox());
         if (user1 != null){
             return new JsonResult("用户名已存在，请重新编辑用户名称进行注册！",false);
+        }else if (user3 != null){
+            return new JsonResult("该邮箱已经被注册，请使用新的邮箱进行注册！",false);
         }else {
             userDao.sign(user);
             User user2 = userDao.login(user.getAccount());

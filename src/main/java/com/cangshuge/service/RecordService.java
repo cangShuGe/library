@@ -19,8 +19,8 @@ public class RecordService {
         return new JsonResult("购买成功！",true);
     }
 
-    public JsonResult updateJudge(String account,int bookno,long buyTime,String judge){
-        recordDao.updateJudge(account,bookno,buyTime,judge);
+    public JsonResult updateJudge(String account,int bookno,long buyTime,String judge,int score){
+        recordDao.updateJudge(account,bookno,buyTime,judge,score);
         return new JsonResult("评论成功！",true);
     }
 

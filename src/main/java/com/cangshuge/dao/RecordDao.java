@@ -13,12 +13,13 @@ public interface RecordDao {
             "#{record.num},#{record.score},#{record.judge})")
     void buyBooks(@Param("record") Record record);
 
-    @Update("update record set judge=#{judge} where account = #{account} and " +
+    @Update("update record set judge=#{judge},score=#{score} where account = #{account} and " +
             "bookno = #{bookno} and buyTime = #{buyTime}")
     void updateJudge(@Param("account") String account,
                      @Param("bookno") int bookno,
                      @Param("buyTime") long buyTime,
-                     @Param("judge") String judge);
+                     @Param("judge") String judge,
+                     @Param("score")int score);
 
     @Results({
             @Result(property = "judge",column = "judge"),

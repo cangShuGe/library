@@ -28,8 +28,9 @@ public class RecordController {
         return recordService.buyBooks(record);
     }
     @RequestMapping("/updateJudge")
-    JsonResult updateJudge(String account,int bookno,long buyTime,String judge){
-        return recordService.updateJudge(account,bookno,buyTime,judge);
+    JsonResult updateJudge(String account,int bookno,long buyTime,String judge,int score){
+        System.out.println(judge);
+        return recordService.updateJudge(account,bookno,buyTime,judge,score);
     }
 
     /**

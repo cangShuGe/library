@@ -31,7 +31,7 @@ public interface UserDao {
      * 修改用户个人资料
      * @param user
      */
-    @Update("update user set account=#{user.account},pwd=#{user.pwd}," +
+    @Update("update user set account=#{user.account}," +
             "mailbox=#{user.mailbox},member=#{user.member}," +
             "address=#{user.address},credit=#{user.credit},name=#{user.name}," +
             "sex=#{user.sex},birthday=#{user.birthday} where binary account=#{user.account}")
@@ -94,4 +94,7 @@ public interface UserDao {
     @Select("select onlinebook.bookno as booknum,AVG(score) as avg_scores,bookname,author,price,resume,url,press from bookshelf,onlinebook" +
             " where bookshelf.bookno = onlinebook.bookno group by onlinebook.bookno order by AVG(score) desc")
     List<Recommend> recommendOnBooks();//推荐电子书籍
+
+    @Select("select * from user where mailbox like #{mailbox}")
+    User getByMailbox(@Param("mailbox") String mailbox);
 }
